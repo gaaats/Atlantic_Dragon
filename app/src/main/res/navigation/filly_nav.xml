@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filly_nav"
+    app:startDestination="@id/maaaaaaiinnaFragment">
+
+    <fragment
+        android:id="@+id/maaaaaaiinnaFragment"
+        android:name="com.bimiboo.number.MaaaaaaiinnaFragment"
+        android:label="fragment_maaaaaaiinna"
+        tools:layout="@layout/fragment_maaaaaaiinna" >
+        <action
+            android:id="@+id/action_maaaaaaiinnaFragment_to_coontrryyrFragment"
+            app:destination="@id/coontrryyrFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coontrryyrFragment"
+        android:name="com.bimiboo.number.CoontrryyrFragment"
+        android:label="fragment_coontrryyr"
+        tools:layout="@layout/fragment_coontrryyr" >
+        <action
+            android:id="@+id/action_coontrryyrFragment_to_seeecMainnnFragment"
+            app:destination="@id/seeecMainnnFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeecMainnnFragment"
+        android:name="com.bimiboo.number.SeeecMainnnFragment"
+        android:label="fragment_seeec_mainnn"
+        tools:layout="@layout/fragment_seeec_mainnn" >
+        <action
+            android:id="@+id/action_seeecMainnnFragment_to_beeffooFillFragment"
+            app:destination="@id/beeffooFillFragment" />
+        <action
+            android:id="@+id/action_seeecMainnnFragment_to_filllyFragment"
+            app:destination="@id/filllyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beeffooFillFragment"
+        android:name="com.bimiboo.number.BeeffooFillFragment"
+        android:label="fragment_beeffoo_fill"
+        tools:layout="@layout/fragment_beeffoo_fill" >
+        <action
+            android:id="@+id/action_beeffooFillFragment_to_filllyFragment"
+            app:destination="@id/filllyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filllyFragment"
+        android:name="com.bimiboo.number.FilllyFragment"
+        android:label="fragment_fillly"
+        tools:layout="@layout/fragment_fillly" />
+</navigation>
